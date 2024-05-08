@@ -1,0 +1,466 @@
+body{
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-flow:column nowrap;
+    font-family:Fredoka,sans-serif
+}
+
+.titre-Groupe{
+    text-align:center;
+    font-size:3em;
+    color:#01224b
+}
+
+ul{
+    list-style:none;
+    padding:0;
+    width:100%
+}
+
+h2{
+    margin-top:2rem;
+    text-align:center;
+    color:#1fc6d8
+}
+
+a{
+    color:#000;
+    text-decoration:none
+}
+
+.obligatoire{
+    color:red
+}
+
+.link-other{
+    background-color:#1fc6d8;
+    color:#01224b;
+    padding:10px
+}
+
+.h2-main{
+    text-decoration:none
+}
+
+/*HEADER START*/
+.headerMain{
+    background-color:#01224b;
+    color:#1fc6d8
+}
+
+.headerMain h2 {
+    margin-right:100px;
+    margin-left:40px
+}
+
+nav{
+    min-height:10vh;
+    display:flex;
+    align-items:center;
+    width:100%;padding:25px 0
+}
+
+nav ul{
+    display:flex;
+    flex:1 1 40rem;
+    justify-content:space-around;
+    align-items:center;
+    list-style:none
+}
+
+header a{
+    text-decoration:none;
+    font-size:1.2em;
+    color:#1fc6d8;
+    width:100%;
+    padding:0 15px
+}
+
+header a:hover{
+    animation-name:hovered;
+    animation-fill-mode:forwards
+}
+
+.gestion-utilisateur{
+    text-align:center
+}
+
+.deconnexion{
+    font-size:.8em
+}
+/*HEADER END*/
+
+/*FOOTER START*/
+.footerMain{
+    background-color:#01224b;
+    color:#1fc6d8;
+    width:100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footerMain ul{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:0
+}
+
+.footerMain a{
+    color:#1fc6d8
+}
+/*FOOTER END*/
+
+/*FORM START*/
+h1{
+    font-size:2em
+}
+
+section{
+    margin-left:7em;
+    margin-bottom:10vh;
+    flex-direction:column;
+    flex-wrap:wrap
+}
+
+form{
+    margin-bottom:50px;
+    width:80%;
+    height:50vh;
+    display:flex;
+    flex-direction:column
+}
+
+label{
+    font-size:20px;
+    display:block;
+    margin-bottom:10px;
+    color:#01224b
+}
+
+input{
+    height:25px;
+    width:100%;
+    margin-bottom:1vh;
+    background-color:#1fc6d8;
+    border-bottom:2px solid #000;
+    font-size:1.2em;
+    border:0;
+    border-bottom:2px solid #01224b
+}
+
+.soumettreFormulaire[type=submit]{
+    margin-top:15px;
+    width:15em
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+}
+/*FORMULAIRE END*/
+
+/*GROUPES + CONSULTER GROUPE START*/
+.groupe{
+    background-image:url(../images/background/main.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    flex-grow:1;
+    align-items:flex-start;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    margin-left:0;
+    padding:35px 0
+}
+
+.link-groupes{
+    width:45%
+}
+
+.groupes-invitation{
+    width:45%
+}
+
+.header-groupes{
+    display:flex;
+    justify-content:center;
+    padding:20px 50px 0 50px
+}
+
+.groupe h3{
+    font-size:30px;
+    text-align:center;
+    text-transform:uppercase
+}
+
+article{
+    background:rgba(255,255,255,.8);
+    backdrop-filter:blur(8px);
+    margin:15px;
+    border-radius:15px;
+    display:flex;
+    flex-direction:row
+}
+
+#article-content{
+    width:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:15px;
+    color:#1fc6d8
+}
+
+#article-images{
+    background-image:url(../images/background/main.jpg);
+    background-position:center;
+    width:40%;border-top-left-radius:15px;
+    border-bottom-left-radius:15px
+}
+
+article li{
+    font-size:1.2em
+}
+
+article h4{
+    color:#01224b;
+    font-size:1.15em;
+    text-align:center;
+    margin-top:0
+}
+
+.info-groupes{
+    text-align:center
+}
+
+.footer-groupes{
+    display:block;
+    width:100%
+}
+
+.footer-groupes{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    list-style:none;width:100%
+}
+
+.footer-groupes li{
+    font-size:1.2rem;
+    padding:5px 15px;
+    border-radius:50px;
+    background-color:#1fc6d8;
+    color:#01224b
+}
+
+#article-content footer{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    margin-top:35px
+}
+
+.choice-invite{
+    height:8%;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center
+}
+
+.choice-invite input{
+    background-color:#fff;
+    width:40%;
+    font-size:17px;
+    margin:0 8px;
+    border-radius:25px;
+    cursor:pointer
+}
+
+#accept-invite{
+    background-color:#60a561
+}
+
+#decline-invite{
+    background-color:#e03616
+}
+
+.consulterGroupe-link-invitation{
+    text-align:center;
+    font-size:1.3rem;
+    margin:0 30%;
+    margin-bottom:3vh;
+    padding:20px;
+    background-color:#01224b;
+    color:#1fc6d8;
+    border-radius:50px
+}
+
+.article-consulter-groupe{
+    width:80%;
+    display:flex;
+    flex-direction:column
+}
+
+.article-consulter-groupe h2{
+    text-transform:uppercase
+}
+
+.section-consulter-groupe{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:100%;margin:0
+}
+
+.liste-ConsulterGroupe{
+    display:flex;
+    align-content:space-around;
+    padding:0;
+    margin:10px 0;
+    width:100%
+}
+
+.consulterGroupe-link{
+    text-align:center;
+    font-size:1.2em;
+    background-color:#01224b;
+    color:#1fc6d8;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+
+.liste-ConsulterGroupe li{
+    width:100%;
+    padding:10px;
+    text-align:center
+}
+
+.titre-tableau{
+    background-color:#01224b;
+    color:#1fc6d8;
+    font-size:1.2em
+}
+
+.formulaire-consulter-groupe{
+    height:10px;
+    display:block
+}
+
+.searchChamp{
+    background-color: #01224b;
+    color: #1fc6d8;
+    border-radius: 5px;
+}
+.searchChamp:hover{
+    border-color: #1fc6d8;
+}
+/*GROUPES + CONSULTER GROUPE END*/
+
+
+/*PHP START*/
+.alert-php{
+    background-color: red;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 20px 0;
+}
+
+.space{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    border-radius: 0;
+}
+.success-php{
+    background-color: green;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 20px 0;
+}
+
+.formConfirm{
+    height: 25%;
+}
+
+article.gestion-facture{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+article.gestion-facture img{
+    width: 300px;
+    height: 300px;
+}
+
+.solder-consulter-groupe{
+    margin: 0;
+    width: 100%;
+    height: 10%;
+}
+/*PHP END*/
+/*REACT HEADER*/
+@media (max-width :1100px){
+    .headerMain nav{
+        flex-direction:column;
+        height:125px
+    }
+
+    .headerMain li{
+        font-size:.8rem;
+        padding:10px
+    }
+
+    .headerMain h2{
+        margin:0;
+        width:150px
+    }
+
+    .headerMain a{
+        padding:0 15px}
+}
+
+/*REACT GROUPES*/
+@media (max-width :830px){
+    .link-groupes{
+        width:80%
+    }
+    .groupes-invitation{
+        width:73%}
+}
+
+/*REACT CONSULTER GROUPE*/
+@media (max-width :900px){
+    .article-consulter-groupe{
+        width:100%;margin:25px
+    }
+
+    .liste-ConsulterGroupe{
+        font-size:1rem
+    }
+
+    .liste-ConsulterGroupe li{
+        font-size:1em
+    }
+
+    .titre-tableau{
+        font-size:1em}
+}
+
+@keyframes hovered{
+    to{
+        transform:scale(1.05);
+        background-color:#1fc6d8;
+        color:#01224b;
+        border-radius:25px}
+}
